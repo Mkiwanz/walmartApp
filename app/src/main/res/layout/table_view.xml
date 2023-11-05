@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableLayout
+        android:id="@+id/table_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/add_btn"
+        android:shrinkColumns="*"
+        android:stretchColumns="*">
+        <!-- Initial static rows can be added here -->
+    </TableLayout>
+
+    <Button
+        android:id="@+id/add_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="ADD" />
+
+    <EditText
+        android:id="@+id/version_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/add_btn"
+        android:hint="Enter Android Version"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/codename_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/version_input"
+        android:hint="Enter Android Code Name"
+        android:inputType="text" />
+
+</RelativeLayout>
